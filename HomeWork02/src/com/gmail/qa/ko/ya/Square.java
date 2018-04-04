@@ -2,16 +2,24 @@ package com.gmail.qa.ko.ya;
 
 public class Square extends Shape {
 
-	public double a;
+	private double a;
 
 	@Override
 	public double getPerimetr() {
-		return a*4;
+		return getA() * 4;
 	}
 
 	@Override
 	public double getArea() {
-		return a*a;
+		return getA() * getA();
+	}
+
+	public double getA() {
+		return a;
+	}
+
+	public void setA(double a) {
+		this.a = a;
 	}
 
 }
