@@ -1,12 +1,20 @@
 package com.gmail.qa.ko.ya;
 
 public class Group {
-	private int nextIndex = 0;
 	private Student[] students = new Student[10];
 
 	public void addStudent(Student st) throws StudentException {
-		students[nextIndex] = st;
-	    ++nextIndex;	
+		boolean search = true;
+		try{
+			for(int i = 0;search;i++){
+				if(students[i] == null){
+					students[i] = st;
+					search = false;
+				}
+			}
+		}catch(Exception e){
+			throw new StudentException();
+		}
 	}
 
 	public void delStudent(Student st) {
