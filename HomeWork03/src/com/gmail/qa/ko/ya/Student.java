@@ -18,8 +18,8 @@ public class Student extends Human {
 
 	@Override
 	public String toString() {
-		return getName() + " " + getLastName() + " ," + sexStudent(isSex()) + " ," + getAge() + "year," + "raiting"
-				+ specialty + "faculty" + faculty;
+		return getName() + " " + getLastName() + " ," + sexStudent(isSex()) + " ," + getAge() + "year, " + "raiting "
+				+ specialty + ", faculty " + faculty;
 
 	}
 
