@@ -1,6 +1,6 @@
 package com.gmail.qa.ko.ya;
 
-public class Student extends Human {
+public class Student extends Human{
 
 	private String specialty;
 	private String faculty;
@@ -29,5 +29,4 @@ public class Student extends Human {
 		} else
 			return "Famale";
 	}
-
 }
